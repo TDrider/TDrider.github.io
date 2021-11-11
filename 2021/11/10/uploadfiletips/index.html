@@ -20,19 +20,19 @@
     var CONFIG = {"hostname":"example.com","root":"/","scheme":"Gemini","version":"7.8.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":false,"show_result":false,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":false,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}}};
   </script>
 
-  <meta name="description" content="使用GIT上传文件是出现的问题以及其解决方式： 出现: Failed to connect to 127.0.0.1 port 21882 after 2098 ms: Connection refused  　　是在git中配置http本地代理的端口号错误造成，输入git config --global -l查看git的所有配置： 　　解决方式是，打开VPN，查看http代理的端口号： 　　再次">
+  <meta name="description" content="使用GIT上传文件是出现的问题以及其解决方式： 出现: Failed to connect to 127.0.0.1 port 21882 after 2098 ms: Connection refused   　　是在git中配置http本地代理的端口号错误造成，输入git config --global -l查看git的所有配置：  　　解决方式是，打开VPN，查看http代理的端口号：">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Git文件上传的问题以及解决方式总结">
 <meta property="og:url" content="http://example.com/2021/11/10/uploadfiletips/index.html">
 <meta property="og:site_name" content="Trunk &amp; Tips | TD">
-<meta property="og:description" content="使用GIT上传文件是出现的问题以及其解决方式： 出现: Failed to connect to 127.0.0.1 port 21882 after 2098 ms: Connection refused  　　是在git中配置http本地代理的端口号错误造成，输入git config --global -l查看git的所有配置： 　　解决方式是，打开VPN，查看http代理的端口号： 　　再次">
+<meta property="og:description" content="使用GIT上传文件是出现的问题以及其解决方式： 出现: Failed to connect to 127.0.0.1 port 21882 after 2098 ms: Connection refused   　　是在git中配置http本地代理的端口号错误造成，输入git config --global -l查看git的所有配置：  　　解决方式是，打开VPN，查看http代理的端口号：">
 <meta property="og:locale" content="zh_CN">
 <meta property="og:image" content="http://example.com/2021/11/10/uploadfiletips/error.png">
 <meta property="og:image" content="http://example.com/2021/11/10/uploadfiletips/git_http_proxy.png">
 <meta property="og:image" content="http://example.com/2021/11/10/uploadfiletips/vpn_http_proxy.png">
 <meta property="og:image" content="http://example.com/2021/11/10/uploadfiletips/correct_result.png">
 <meta property="article:published_time" content="2021-11-10T10:50:24.821Z">
-<meta property="article:modified_time" content="2021-11-11T01:57:25.021Z">
+<meta property="article:modified_time" content="2021-11-11T02:17:49.600Z">
 <meta property="article:author" content="TD_Raider">
 <meta property="article:tag" content="git">
 <meta name="twitter:card" content="summary">
@@ -202,7 +202,7 @@
                   <i class="far fa-calendar-check"></i>
                 </span>
                 <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2021-11-11 09:57:25" itemprop="dateModified" datetime="2021-11-11T09:57:25+08:00">2021-11-11</time>
+                <time title="修改时间：2021-11-11 10:17:49" itemprop="dateModified" datetime="2021-11-11T10:17:49+08:00">2021-11-11</time>
               </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
@@ -226,11 +226,15 @@
 
       
         <h1 id="使用GIT上传文件是出现的问题以及其解决方式："><a href="#使用GIT上传文件是出现的问题以及其解决方式：" class="headerlink" title="使用GIT上传文件是出现的问题以及其解决方式："></a>使用GIT上传文件是出现的问题以及其解决方式：</h1><ol>
-<li>出现: Failed to connect to 127.0.0.1 port 21882 after 2098 ms: Connection refused<br><img src="/2021/11/10/uploadfiletips/error.png"></li>
+<li>出现: Failed to connect to 127.0.0.1 port 21882 after 2098 ms: Connection refused</li>
 </ol>
-<p>　　是在git中配置http本地代理的端口号错误造成，输入<code>git config --global -l</code>查看git的所有配置：<br><img src="git_http_proxy.png"></p>
-<p>　　解决方式是，打开VPN，查看http代理的端口号：<br><img src="vpn_http_proxy.png"></p>
-<p>　　再次运行<code>hexo d</code>，上传成功！<br><img src="/2021/11/10/uploadfiletips/correct_result.png"></p>
+<p><img src="/2021/11/10/uploadfiletips/error.png"></p>
+<p>　　是在git中配置http本地代理的端口号错误造成，输入<code>git config --global -l</code>查看git的所有配置：</p>
+<p><img src="git_http_proxy.png" title="git"></p>
+<p>　　解决方式是，打开VPN，查看http代理的端口号：</p>
+<p><img src="vpn_http_proxy.png" title="vpn"></p>
+<p>　　再次运行<code>hexo d</code>，上传成功！</p>
+<p><img src="/2021/11/10/uploadfiletips/correct_result.png"></p>
 <p><strong>Tip：由于Github裸连成功是小概率性的，建议科学上网！</strong></p>
 <p><strong>本帖提醒：如须科学上网，请正确使用网络资源</strong></p>
 
