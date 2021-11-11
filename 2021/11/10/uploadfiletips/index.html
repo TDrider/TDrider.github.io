@@ -27,7 +27,6 @@
 <meta property="og:site_name" content="Trunk &amp; Tips | TD">
 <meta property="og:description" content="使用GIT上传文件是出现的问题以及其解决方式： 出现: Failed to connect to 127.0.0.1 port 21882 after 2098 ms: Connection refused    　　是在git中配置http本地代理的端口号错误造成，输入git config --global -l查看git的所有配置：   　　解决方式是，打开VPN，查看http代理的端口号：">
 <meta property="og:locale" content="zh_CN">
-<meta property="og:image" content="http://example.com/2021/11/10/uploadfiletips/error.png">
 <meta property="og:image" content="http://example.com/2021/11/10/uploadfiletips/git_http_proxy.png">
 <meta property="og:image" content="http://example.com/2021/11/10/uploadfiletips/vpn_http_proxy.png">
 <meta property="og:image" content="http://example.com/2021/11/10/uploadfiletips/correct_result.png">
@@ -36,7 +35,7 @@
 <meta property="article:author" content="TD_Raider">
 <meta property="article:tag" content="git">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:image" content="http://example.com/2021/11/10/uploadfiletips/error.png">
+<meta name="twitter:image" content="http://example.com/2021/11/10/uploadfiletips/git_http_proxy.png">
 
 <link rel="canonical" href="http://example.com/2021/11/10/uploadfiletips/">
 
@@ -228,7 +227,7 @@
         <h1 id="使用GIT上传文件是出现的问题以及其解决方式："><a href="#使用GIT上传文件是出现的问题以及其解决方式：" class="headerlink" title="使用GIT上传文件是出现的问题以及其解决方式："></a>使用GIT上传文件是出现的问题以及其解决方式：</h1><ol>
 <li>出现: Failed to connect to 127.0.0.1 port 21882 after 2098 ms: Connection refused</li>
 </ol>
-<img src="/2021/11/10/uploadfiletips/error.png" class>
+
 
 <p>　　是在git中配置http本地代理的端口号错误造成，输入<code>git config --global -l</code>查看git的所有配置：</p>
 <img src="/2021/11/10/uploadfiletips/git_http_proxy.png" class>
