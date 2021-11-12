@@ -340,47 +340,48 @@ td {
 }
 .toggle {
   line-height: 0;
+  padding-top: 50px;
 }
 .toggle .toggle-line {
-  background: #fff;
+  background: #ffc0cb;
   display: inline-block;
-  height: 2px;
+  height: 4px;
   left: 0;
   position: relative;
   top: 0;
-  transition: all 0.4s;
+  transition: all 0.3s;
   vertical-align: top;
   width: 100%;
 }
 .toggle .toggle-line:not(:first-child) {
-  margin-top: 3px;
+  margin-top: 5px;
 }
 .toggle.toggle-arrow .toggle-line-first {
-  left: 50%;
-  top: 2px;
-  transform: rotate(45deg);
+  left: 45%;
+  top: 4px;
+  transform: rotate(40deg);
   width: 50%;
 }
 .toggle.toggle-arrow .toggle-line-middle {
-  left: 2px;
-  width: 90%;
+  left: 3px;
+  width: 80%;
 }
 .toggle.toggle-arrow .toggle-line-last {
-  left: 50%;
-  top: -2px;
-  transform: rotate(-45deg);
+  left: 45%;
+  top: -4px;
+  transform: rotate(-40deg);
   width: 50%;
 }
 .toggle.toggle-close .toggle-line-first {
-  transform: rotate(-45deg);
-  top: 5px;
+  transform: rotate(-40deg);
+  top: 8.6px;
 }
 .toggle.toggle-close .toggle-line-middle {
   opacity: 0;
 }
 .toggle.toggle-close .toggle-line-last {
-  transform: rotate(45deg);
-  top: -5px;
+  transform: rotate(40deg);
+  top: -8.6px;
 }
 .highlight-container {
   position: relative;
@@ -1217,7 +1218,7 @@ pre .javascript .function {
 }
 .links-of-author a::before,
 .links-of-author span.exturl::before {
-  background: #ffd95b;
+  background: #4df2f4;
   border-radius: 50%;
   content: ' ';
   display: inline-block;
@@ -1325,11 +1326,11 @@ pre .javascript .function {
   background: #222;
   bottom: 45px;
   cursor: pointer;
-  height: 14px;
+  height: 25px;
   left: 30px;
   padding: 5px;
   position: fixed;
-  width: 14px;
+  width: 35px;
   z-index: 1300;
 }
 @media (max-width: 991px) {
@@ -2245,7 +2246,7 @@ hr {
   padding-left: 40px;
   padding-right: 40px;
   padding-bottom: 40px;
-  background: rgba(255,255,255,0.8);
+  background: rgba(255,255,255,0.7);
 }
 @media (max-width: 767px) {
   .content {
