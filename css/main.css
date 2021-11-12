@@ -966,16 +966,16 @@ pre .javascript .function {
 }
 .main-inner {
   margin: 0 auto;
-  width: 700px;
+  width: 900px;
 }
 @media (min-width: 1200px) {
   .main-inner {
-    width: 800px;
+    width: 1200px;
   }
 }
 @media (min-width: 1600px) {
   .main-inner {
-    width: 900px;
+    width: 1200px;
   }
 }
 @media (max-width: 767px) {
@@ -988,16 +988,16 @@ pre .javascript .function {
 }
 .header-inner {
   margin: 0 auto;
-  width: 700px;
+  width: 900px;
 }
 @media (min-width: 1200px) {
   .header-inner {
-    width: 800px;
+    width: 1200px;
   }
 }
 @media (min-width: 1600px) {
   .header-inner {
-    width: 900px;
+    width: 1200px;
   }
 }
 .site-brand-container {
@@ -1217,7 +1217,7 @@ pre .javascript .function {
 }
 .links-of-author a::before,
 .links-of-author span.exturl::before {
-  background: #05ffb0;
+  background: #b5fcbb;
   border-radius: 50%;
   content: ' ';
   display: inline-block;
@@ -1431,16 +1431,16 @@ pre .javascript .function {
   box-sizing: border-box;
   margin: 0 auto;
   text-align: center;
-  width: 700px;
+  width: 900px;
 }
 @media (min-width: 1200px) {
   .footer-inner {
-    width: 800px;
+    width: 1200px;
   }
 }
 @media (min-width: 1600px) {
   .footer-inner {
-    width: 900px;
+    width: 1200px;
   }
 }
 .languages {
@@ -2241,12 +2241,23 @@ hr {
   }
 }
 .content {
-  padding-top: 80px;
+  padding-top: 50px;
+  padding-left: 40px;
+  padding-right: 40px;
+  padding-bottom: 40px;
+  background: rgba(255,255,255,0.8);
 }
 @media (max-width: 767px) {
   .content {
     padding-top: 60px;
   }
+}
+body {
+  background-image: url("../images/background.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: 50% 50%;
+  background-size: 100% 100%;
 }
 .pagination {
   margin: 120px 0 0;
@@ -2260,11 +2271,12 @@ hr {
 }
 .footer {
   background: var(--content-bg-color);
+  background: rgba(255,255,255,0.6);
   color: var(--text-color);
   padding: 10px 0;
 }
 .footer-inner {
-  text-align: left;
+  text-align: center;
 }
 @media (max-width: 767px) {
   .footer-inner {
@@ -2273,7 +2285,8 @@ hr {
   }
 }
 .header {
-  background: var(--content-bg-color);
+  background: url("/source/images/header.jpg");
+  background: rgba(255,255,255,0.7);
 }
 .header-inner {
   align-items: center;
@@ -2424,6 +2437,10 @@ hr {
 }
 .sidebar {
   left: -300px;
+  background: url("../images/sidebar.png");
+  background-position: 50% 50%;
+  background-size: 100% 80%;
+  opacity: 0.9;
 }
 .sidebar.sidebar-active {
   left: 0;
